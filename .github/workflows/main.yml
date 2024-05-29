@@ -1,0 +1,23 @@
+name: GitHub Actions Demo
+  #1- on every push to the main branch, but not when there are changes to files in the .github folder.
+  #2. on every pull request with main as the base branch
+  #3. Every sunday at 6:15 UTC
+  #4. Manually
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '/.github'
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: 15 6 * * 1
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
