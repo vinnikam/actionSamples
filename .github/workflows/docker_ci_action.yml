@@ -16,7 +16,7 @@ jobs:
         id: hello-action
         uses: ./docker
         with:
-          who-to-greet: '@Vinni'
+          who-to-greet: 'Vinni'
 
       - name: Output time set in the container
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
