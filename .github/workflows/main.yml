@@ -1,4 +1,5 @@
 name: GitHub Actions Demo
+  #Autor: Vinni
   #1- on every push to the main branch, but not when there are changes to files in the .github folder.
   #2. on every pull request with main as the base branch
   #3. Every sunday at 6:15 UTC
